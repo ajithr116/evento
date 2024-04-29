@@ -1,0 +1,100 @@
+form {
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+    display: flex;
+    justify-content: center; /* Center the form horizontally */
+    align-items: center; /* Center the form vertically */
+    height: 50vh; /* Make sure the body covers the entire viewport height */
+  }
+  
+  .container {
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 8px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h2 {
+    color: #4e8ec8;
+    margin-bottom: 20px;
+    text-align: center;
+  }
+  
+  form {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .label-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+  }
+  
+  .label-container > label {
+    flex: 1;
+    margin-right: 10px;
+    color: #4e8ec8;
+  }
+  
+  .input-container {
+    display: flex;
+    flex-direction: column;
+  }
+  
+  input[type='text'],
+  input[type='email'],
+  input[type='number'] {
+    padding: 10px;
+    margin-bottom: 20px;
+    border: 1px solid #ccc;
+    border-radius: 4px;
+  }
+  
+  input[type='file'] {
+    margin-bottom: 20px;
+  }
+  
+  input[type='file']::-webkit-file-upload-button {
+    background-color: #4e8ec8;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  input[type='file']::-webkit-file-upload-button:hover {
+    background-color: #3578ae;
+  }
+  
+  button[type='submit'] {
+    background-color: #4e8ec8;
+    color: #fff;
+    border: none;
+    padding: 12px 24px;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    align-self: flex-end;
+    width:
+  }
+  
+  button[type='submit']:hover {
+    background-color: #3578ae;
+  }
+  
+  .avatar-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+  
+  .avatar-container img {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    margin-right: 20px;
+  }
+  

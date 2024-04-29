@@ -1,0 +1,145 @@
+/* EventsPage.css */
+
+.event-list {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(400px, 1fr));
+    grid-gap: 20px;
+  }
+  
+  .event-card {
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease;
+    background-color: #ffffff;
+    border: 1px solid #ddd;
+  }
+  
+  .event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 12px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-card h2 {
+    margin: 0;
+    padding: 20px;
+    font-size: 24px;
+    color: #ffffff;
+    background-color: #007bff;
+    text-align: center;
+    border-bottom: 1px solid #ddd;
+  }
+  
+  .event-card p {
+    margin: 0;
+    padding: 15px 20px;
+    color: #333333;
+    font-size: 16px;
+    line-height: 1.4;
+    text-align: justify;
+    border-bottom: 1px solid #ddd;
+    transition: background-color 0.3s ease;
+  }
+  
+  .event-card p:hover {
+    background-color: #f8f9fa;
+  }
+  
+  .event-card .Description {
+    font-weight: bold;
+    
+  }
+  
+  .button-container {
+    display: flex;
+    justify-content: space-between;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+  }
+  
+  .edit-button,
+  .delete-button,
+  .Status-button {
+    border: none;
+    border-radius: 5px;
+    padding: 8px 16px;
+    cursor: pointer;
+    transition: all 0.5s ease;
+    margin: 10px;
+    position: relative;
+    overflow: hidden;
+    width: 100%;
+  }
+  
+  .edit-button:before,
+  .delete-button:before,
+  .Status-button:before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: -100%;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, 0.1);
+    transition: all 0.7s ease-in-out;
+  }
+  
+  .edit-button:hover:before,
+  .delete-button:hover:before,
+  .Status-button:hover:before {
+    left: 100%;
+  }
+  
+  .edit-button {
+    background-color: #007bff;
+    color: #fff;
+  }
+  
+  .delete-button {
+    background-color: #dc3545;
+    color: #fff;
+  }
+  
+  .Status-button {
+    background-color: #00ff4c;
+    color: #fff;
+  }
+  
+  
+
+  .edit-button:hover,
+  .delete-button:hover {
+    filter: brightness(90%);
+  }
+  
+  @media (max-width: 768px) {
+    .event-list {
+      grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    }
+  }
+/* EventsPage.css */
+
+.event-card p:hover {
+  background-color: #b1d5fa;
+}
+
+.event-card .Description:hover {
+  background-color: #afe4fd;
+}
+
+.event-card .Location:hover {
+  background-color: #fcb7d2;
+}
+
+.event-card .Date:hover {
+  background-color: #adfdf0;
+}
+
+.event-card .Time:hover {
+  background-color: #f1e6ab;
+}
+
+.event-card .Created:hover {
+  background-color: #dbadfa;
+}
+  

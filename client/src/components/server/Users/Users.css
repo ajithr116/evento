@@ -1,0 +1,75 @@
+/* UserTable.css */
+
+.user-table {
+    border-collapse: collapse;
+    margin-left: 300px;
+    margin-top:40px;
+    width:80%;
+  }
+  
+  .user-table th,
+  .user-table td {
+    border: 1px solid #ddd;
+    padding: 8px;
+    text-align: left;
+  }
+  
+  .user-table th {
+    background-color: #007bff;
+    color: white;
+  }
+  
+  .user-table tr:nth-child(even) {
+    background-color: #f2f2f2;
+  }
+  
+  .user-table img {
+    width: 50px;
+    height: 50px;
+    object-fit: cover;
+    border-radius: 50%;
+  }
+  .user-details-header {
+    text-align: center;
+    padding: 10px;
+    background-color: #f2f2f2;
+    margin-bottom: 10px;
+  }
+  .action-buttons {
+    display: flex;
+    justify-content:center;
+  }
+  .action-buttons button {
+    padding: 5px 15px;
+    margin: 0 5px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+  }
+  
+  .action-buttons button:nth-child(1) {
+    background-color: #4CAF50; /* Edit button color */
+    color: white;
+  }
+  
+  .action-buttons button:nth-child(2) {
+    background-color: #FF9800; /* Block button color */
+    color: white;
+  }
+  
+  .action-buttons button:nth-child(3) {
+    background-color: #F44336; /* Delete button color */
+    color: white;
+  }
+  .search-input {
+    width: 500px; /* Adjust as needed */
+    padding: 10px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    transition: width 0.3s ease-in-out; /* Add transition for smooth animation */
+  }
+  
+  .search-input.focused {
+    width: 100%;
+  }
