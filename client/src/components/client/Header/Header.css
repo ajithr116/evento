@@ -1,0 +1,54 @@
+/* Header.css */
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    background-color: #007bff;
+    color: #ffffff;
+    border-radius: 10px;
+  }
+  
+  .header-title {
+    font-size: 24px;
+    font-weight: bold;
+  }
+  
+  .header-buttons {
+    display: flex;
+    
+  }
+  
+  .signout-button{
+    margin-left: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ee3333;
+    color: #d4dae0;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  .add-event-button,
+  .add-profile-button {
+    margin-left: 50px;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    background-color: #ffffff;
+    color: #007bff;
+    cursor: pointer;
+    transition: all 0.3s ease;
+  }
+  
+  .signout-button:hover,
+  .add-event-button:hover,
+  .add-profile-button:hover {
+    background-color: #007bff;
+    color: #ffffff;
+    border:1px solid white;
+  }
+  .signout-button:hover {
+    background-color: #c82333; /* Changes the hover color of the signout button to a darker red */
+  }

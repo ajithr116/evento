@@ -1,0 +1,76 @@
+/* EventForm.css */
+
+.event-form {
+    max-width: 400px;
+    margin: 0 auto;
+    padding: 30px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    margin-top: 10px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    transition: box-shadow 0.3s ease;
+  }
+  
+  .event-form:hover {
+    box-shadow: 0 5px 15px rgba(0, 0, 0, 0.2);
+  }
+  
+  .event-form h2 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    text-align: center;
+    color: #007bff;
+    transition: color 0.3s ease;
+  }
+  
+  .event-form h2:hover {
+    color: #0056b3;
+  }
+  
+  .form-group {
+    margin-bottom: 20px;
+  }
+  
+  .form-group label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+  }
+  
+  .form-group input,
+  .form-group textarea {
+    width: 100%;
+    padding: 10px;
+    font-size: 16px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    transition: border-color 0.3s ease, box-shadow 0.3s ease;
+  }
+  
+  .form-group input:focus,
+  .form-group textarea:focus,
+  .form-group input:hover,
+  .form-group textarea:hover {
+    border-color: #007bff;
+    box-shadow: 0 0 10px rgba(0, 123, 255, 0.5);
+  }
+  
+  button[type="submit"] {
+    display: block;
+    width: 100%;
+    background-color: #007bff;
+    color: #fff;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+  }
+  
+  button[type="submit"]:hover {
+    background-color: #0056b3;
+    transform: scale(1.05);
+  }
+  
