@@ -1,13 +1,22 @@
 
 import React, { useState, useEffect } from 'react';
-import axios from 'axios';
 import Header from '../Header/Header';
 import './Home.css';
 import { MdDescription, MdLocationOn, MdDateRange, MdAccessTime, MdPerson } from 'react-icons/md';
+import { useNavigate } from 'react-router-dom';
 
 const EventsPage = () => {
   const [events, setEvents] = useState([]);
+  const isAuthenticated = !!localStorage.getItem('token');
+  const navigate = useNavigate();
 
+  useEffect(() => {
+    if (!isAuthenticated) {
+      navigate('/login');
+    }
+  }, [isAuthenticated, navigate]);
+
+  
   useEffect(() => {
     // Dummy data for demonstration
     const dummyEvents = [

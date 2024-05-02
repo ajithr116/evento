@@ -81,3 +81,12 @@
     width: 90%;
   }
 }
+
+.angor{
+  text-decoration: none;
+  color:white;
+}
+.angor:hover{
+  text-decoration: none;
+  color:#42da3c;
+}

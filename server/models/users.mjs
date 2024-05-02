@@ -1,3 +1,4 @@
+// User.mjs
 import mongoose from "mongoose";
 import crypto from "crypto";
 
@@ -7,18 +8,16 @@ const UserSchema = new Schema({
     uniqueID: {
         type: String,
         default: function() {
-          return crypto.randomBytes(3).toString('hex'); // Generate a random referral code
+          return crypto.randomBytes(3).toString('hex'); 
         }
     },
     firstName: {
         type: String,
         required: true,
-        unique: true
     },
     lastName: {
         type: String,
         required: true,
-        unique: true
     },
     email: {
         type: String,
@@ -32,7 +31,11 @@ const UserSchema = new Schema({
     profileImage: {
         type: String,
         default: ''
+    },
+    isAdmin:{
+        type: Boolean,
+        default:false
     }
 });
 
-module.exports = mongoose.model('User', UserSchema);
+export default mongoose.model('User', UserSchema);
