@@ -6,6 +6,7 @@ import dotenv from 'dotenv';
 
 import connectDB from './config/DB.mjs'
 import adminRouter from './routes/admin/admin.mjs';
+import userRoutes from './routes/users/users.mjs';
 
 const app = express();
 dotenv.config();
@@ -16,20 +17,23 @@ app.use(express.urlencoded({ extended: false }));
 app.use(session({ secret: process.env.SESSION_SECRET, resave: false, saveUninitialized: false }));
 app.use(express.json());
 
+let tokenBlacklist = [];
+
 connectDB();
 
-const users = {
-    name:"ajith",
-    age :15
-}
+app.use('/', userRoutes);
+
+app.use((req, res, next) => {
+  res.set('Cache-Control', 'no-store')
+  next()
+})
 
 app.use('/admin', adminRouter);
 
 app.get('/', async(req, res) => {
-    return res.status(200).send(users);
-});
-
+  return res.status(200).send("working2");
+}); 
 
 app.listen( process.env.PORT || 4000 , () => {
-    console.log( "Server started successfully" );
-}) 
+  console.log( "Server started successfully" );
+})

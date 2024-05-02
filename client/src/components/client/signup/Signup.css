@@ -97,4 +97,11 @@
     max-width: 20%;
     height: auto;
   }
+  .password-conditions li {
+    color: red;
+  }
+  
+  .password-conditions li.valid {
+    color: green;
+  }
   
